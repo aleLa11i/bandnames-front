@@ -7,7 +7,7 @@ export const useSockets = () => {
 
     const [online, setOnline] = useState(false);
 
-    const serverPath = "http://localhost:8080";
+    const serverPath = process.env.baseURL;
 
     const socket = useMemo(() => {
         
